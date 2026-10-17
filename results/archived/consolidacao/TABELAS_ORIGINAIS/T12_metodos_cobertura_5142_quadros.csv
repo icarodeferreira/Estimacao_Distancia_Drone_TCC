@@ -1,0 +1,3 @@
+﻿metodo,quadros_video,quadros_com_roi,cobertura_pct,seletor_supervisionado,unidade,aviso
+yolo_original,5142,3764,73.20108907040063,False,quadros com caixa selecionada,Disponibilidade de ROI != recall ou deteccao correta
+associacao_temporal,5142,1853,36.03656164916375,True,quadros com caixa selecionada,6 sementes manuais; nao totalmente autonomo

@@ -1,0 +1,33 @@
+{
+  "papel": "VIDEO DEMONSTRATIVO, SEM VALIDACAO METRICA INDEPENDENTE",
+  "video_alvo": "video_final_farol.mov",
+  "quadros_esperados": 3537,
+  "fps_esperado": 30.0,
+  "video_original_distinto": "video_final_farol_original.MOV (6702 quadros)",
+  "offset_historico_video_editado_para_telemetria_s": 4.8,
+  "cenario_geometria_historico": "altura camera=1.5m; distancia horizontal camera-HOME=1.5m, hipoteticas",
+  "avisos": [
+    "Fonte YOLO/Depth framewise congelada.",
+    "Regressao OOF por segundo, nao por quadro.",
+    "Comparacoes % sao descritivas contra referencia nominal inferida de telemetria, nao erros fisicos certificados.",
+    "Z Depth Pro e profundidade axial, enquanto a referencia e radial.",
+    "GT e correcoes humanas nao atestam todas as ROIs.",
+    "Valores de camera-HOME declarados em outros registros podem divergir do cenario historico; NAO recalibrado."
+  ],
+  "fontes_sha256": {
+    "box_width_model_provisional.json": "084f2d1fbe547a0e2ae19534be2083d29c0d220e94631755dc2b5dd2e63ee1f2",
+    "T04_pareamento_oof_113_segundos.csv": "87745bb4327f2e6a5a20d06239dbb8a3e91cecf828adf88a23c6fb9959e8a1d8",
+    "synchronization_correction.json": "2513cbcf0da990e0e60c68a7eaf5c1e67c4426fb9a269b4c03dad0a929810c48",
+    "depth_all_frames.csv": "9fa6a409282dfbff39bbda50d315d2c5313e2ac43830eb4c2afedfab0980ff5c",
+    "yolo_all_frames.csv": "68ce4acd374bc091bf31c341859ee6d21c436cb3514a8d7af6d2d002c9b7a11e",
+    "temporal_protocol.json": "7cb1a21b20a81263e0e18e62374aadfa8a50843da4f3effa2fbefdaf5bfd53d0"
+  },
+  "contagens": {
+    "quadros": 3537,
+    "segundos_oof": 113,
+    "segundos_oof_aceitos": 109,
+    "depth_aceitos": 3143,
+    "rois_propostas": 3502
+  },
+  "teste_quadros": null
+}

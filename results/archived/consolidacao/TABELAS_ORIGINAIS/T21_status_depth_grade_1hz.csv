@@ -1,0 +1,4 @@
+﻿status,n_quadros,significado
+depth_ok,126,executado quando ROI selecionada no instante programado
+agendado_sem_ROI,46,"estava na grade de 1 Hz, mas sem regiao candidata elegivel"
+fora_da_grade_1Hz,4970,nao programado para inferencia Depth Pro

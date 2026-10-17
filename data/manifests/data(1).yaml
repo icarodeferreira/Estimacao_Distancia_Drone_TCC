@@ -1,0 +1,10 @@
+path: C:\TCC_Drone_local\dataset_aod4_yolo
+train: images/train
+val: images/val
+test: images/test
+nc: 4
+names:
+  0: airplane
+  1: bird
+  2: drone
+  3: helicopter

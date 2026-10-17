@@ -1,0 +1,29 @@
+{
+  "status": "provisional_internal_validation_only",
+  "model": "box_width_log",
+  "equation": "distance_m = constant * median_box_width_px ** exponent",
+  "constant": 4442.5484604804715,
+  "exponent": -1.2771511434180072,
+  "intercept_log_m": 8.398983468349833,
+  "input_resolution_px": [
+    3840,
+    2160
+  ],
+  "aggregation": "median width of reliable YOLO boxes per second",
+  "yolo_reliable_confidence": 0.25,
+  "minimum_box_width_px": 10.0,
+  "minimum_box_height_px": 5.0,
+  "quality_gate": {
+    "minimum_reliable_frames_per_second": 5,
+    "maximum_relative_width_iqr": 0.35,
+    "causal_hampel_history_seconds": 5,
+    "causal_hampel_k": 3.0,
+    "minimum_log_width_jump": 0.35
+  },
+  "limitations": [
+    "single flight internal temporal validation",
+    "fixed zoom required",
+    "same drone appearance required",
+    "only two valid seconds above 40 m"
+  ]
+}

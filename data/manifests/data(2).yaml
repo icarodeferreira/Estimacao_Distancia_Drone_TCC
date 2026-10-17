@@ -1,0 +1,9 @@
+path: C:/TCC_Drone_local/dataset_drone_aod4_classes
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: airplane
+  1: bird
+  2: drone
+  3: helicopter

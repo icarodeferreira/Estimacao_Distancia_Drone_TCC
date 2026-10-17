@@ -1,0 +1,3 @@
+﻿fase,n_segundos,mae_m,rmse_m,mediana_erro_absoluto_m,vies_m,referencia,validacao_fisica_independente
+OOF_antes_do_filtro,113,1.5744298319428875,2.3922869291327435,1.1833093980098095,-0.1707196738356647,distancia_radial_nominal_derivada_de_telemetria,False
+OOF_apos_filtro,109,1.4241446197900662,1.8076959357008433,1.16453448430941,-0.316133816079077,distancia_radial_nominal_derivada_de_telemetria,False

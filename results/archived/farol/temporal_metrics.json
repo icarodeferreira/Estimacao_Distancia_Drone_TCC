@@ -1,0 +1,41 @@
+{
+  "created_at_utc": "2026-09-25T11:55:46+00:00",
+  "mode": "full",
+  "frames_processed": 3537,
+  "telemetry_labeled_frames": 3537,
+  "emitted_frames": 3143,
+  "emission_coverage_pct": 88.86061634153238,
+  "acceptable_pct_all_labeled_frames": 29.431721798134014,
+  "per_frame_descriptive": {
+    "n": 3143,
+    "mae_m": 10.203446676176304,
+    "rmse_m": 13.758387152033523,
+    "median_ae_m": 6.992468304286291,
+    "mape_pct": 85.82066411385445,
+    "bias_m": -8.097533863668673,
+    "r2": -0.526219996295852,
+    "spearman": 0.1789507049450877
+  },
+  "per_second_primary_temporal": {
+    "n": 113,
+    "mae_m": 9.788922550127856,
+    "rmse_m": 13.334989569064515,
+    "median_ae_m": 6.880598047704674,
+    "mape_pct": 82.77069895021519,
+    "bias_m": -7.857680549600221,
+    "r2": -0.504965466011142,
+    "spearman": 0.21925157040512996
+  },
+  "mean_partial_interval_error_m": 8.859658732769102,
+  "median_frame_to_frame_jitter_m": 0.0909358297383962,
+  "longest_abstention_run_frames": 137,
+  "longest_abstention_run_s": 4.566666666666666,
+  "mean_yolo_time_s": 0.043161587927622036,
+  "mean_depth_time_s": 4.242347551569147,
+  "offline_real_time_factor": 128.56527418490307,
+  "abstention_reasons": {
+    "low_confidence": 359,
+    "no_detection": 35
+  },
+  "scientific_note": "Quadros adjacentes e rótulos interpolados são temporalmente dependentes; o resumo por segundo é primário."
+}

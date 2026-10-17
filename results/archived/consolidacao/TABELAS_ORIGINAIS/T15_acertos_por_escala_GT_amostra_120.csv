@@ -1,0 +1,7 @@
+﻿faixa_gt_largura_px,metodo,n_positivos,n_tp_iou50,taxa_tp_condicional_amostral_pct,observacao
+<32,original,10,0,0.0,Contagem nao ponderada dos quadros positivos classificados na avaliacao primaria; criterio IoU>=0.5
+<32,temporal,10,0,0.0,Contagem nao ponderada dos quadros positivos classificados na avaliacao primaria; criterio IoU>=0.5
+32_a_95,original,68,1,1.4705882352941178,Contagem nao ponderada dos quadros positivos classificados na avaliacao primaria; criterio IoU>=0.5
+32_a_95,temporal,68,0,0.0,Contagem nao ponderada dos quadros positivos classificados na avaliacao primaria; criterio IoU>=0.5
+>=96,original,20,8,40.0,Contagem nao ponderada dos quadros positivos classificados na avaliacao primaria; criterio IoU>=0.5
+>=96,temporal,20,8,40.0,Contagem nao ponderada dos quadros positivos classificados na avaliacao primaria; criterio IoU>=0.5

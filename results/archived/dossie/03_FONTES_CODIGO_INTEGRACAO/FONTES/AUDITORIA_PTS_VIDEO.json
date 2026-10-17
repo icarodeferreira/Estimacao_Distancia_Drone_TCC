@@ -1,0 +1,85 @@
+{
+  "aviso": "PTS relativo ao primeiro quadro; isto NÃO sincroniza automaticamente telemetria.",
+  "arquivo_video": "IMG_5962_editado.mov",
+  "dimensao_bytes": 601273403,
+  "streams_ffprobe": [
+    {
+      "index": 0,
+      "width": 3840,
+      "height": 2160,
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "time_base": "1/30",
+      "start_time": "0.000000",
+      "duration": "171.400000",
+      "nb_frames": "5142"
+    }
+  ],
+  "total_quadros_pts": 5142,
+  "pts_ausentes_count": 0,
+  "pts_ausentes_indices": [],
+  "fps_referencia_nominal": 30.0,
+  "dt_mediana_s": 0.03333299999999895,
+  "dt_min_s": 0.03333299999999895,
+  "dt_max_s": 0.033334000000024844,
+  "duracao_primeiro_ultimo_pts_s": 171.366667,
+  "pts_nao_monotonicos_count": 0,
+  "passos_distantes_do_nominal_mais_5ms_count": 0,
+  "exemplos_dos_passos_anomalos": [],
+  "max_abs_desvio_pts_menos_quadro_div_30_s": 3.333333467026023e-07,
+  "quadros_interesse": [
+    {
+      "quadro": 0,
+      "pts_relativo_s": 0.0,
+      "segundos_nominais_s": 0.0,
+      "desvio_s": 0.0
+    },
+    {
+      "quadro": 137,
+      "pts_relativo_s": 4.566667,
+      "segundos_nominais_s": 4.566666666666666,
+      "desvio_s": 3.33333333379926e-07
+    },
+    {
+      "quadro": 324,
+      "pts_relativo_s": 10.8,
+      "segundos_nominais_s": 10.8,
+      "desvio_s": 0.0
+    },
+    {
+      "quadro": 325,
+      "pts_relativo_s": 10.833333,
+      "segundos_nominais_s": 10.833333333333334,
+      "desvio_s": -3.333333342681044e-07
+    },
+    {
+      "quadro": 2172,
+      "pts_relativo_s": 72.4,
+      "segundos_nominais_s": 72.4,
+      "desvio_s": 0.0
+    },
+    {
+      "quadro": 2173,
+      "pts_relativo_s": 72.433333,
+      "segundos_nominais_s": 72.43333333333334,
+      "desvio_s": -3.3333333249174757e-07
+    },
+    {
+      "quadro": 4987,
+      "pts_relativo_s": 166.233333,
+      "segundos_nominais_s": 166.23333333333332,
+      "desvio_s": -3.3333333249174757e-07
+    },
+    {
+      "quadro": 5141,
+      "pts_relativo_s": 171.366667,
+      "segundos_nominais_s": 171.36666666666667,
+      "desvio_s": 3.3333333249174757e-07
+    }
+  ],
+  "arquivos_gerados": [
+    "AUDITORIA_PTS_VIDEO.json",
+    "PTS_TODOS_QUADROS.csv",
+    "PTS_QUADROS_REFERENCIA.csv"
+  ]
+}

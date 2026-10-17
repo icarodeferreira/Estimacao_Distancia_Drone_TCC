@@ -1,0 +1,17 @@
+{
+  "train": {
+    "labels": 317,
+    "images": 99,
+    "boxes": 298
+  },
+  "val": {
+    "labels": 84,
+    "images": 28,
+    "boxes": 78
+  },
+  "test": {
+    "labels": 75,
+    "images": 75,
+    "boxes": 67
+  }
+}

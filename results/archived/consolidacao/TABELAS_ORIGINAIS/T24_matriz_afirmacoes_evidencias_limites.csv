@@ -1,0 +1,18 @@
+﻿id,afirmacao,nivel_evidencia,contexto,tabela,documento_primario,ressalva
+YOLO-01,"Val 960 mAP50 0,653; val1920 0,863; teste960 0,04407; teste1920 0,07784",A,farol dataset proprio,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,HISTORICO_RELATORIO_GERAL_10OUT.md,"Metrica oficial do detector, nao independente no tempo"
+YOLO-02,19 GTs alternativos nao modificaram metricas oficiais,A,teste do farol,T05_sensibilidade_GT_19_anotacoes.csv,SENSIBILIDADE_GT_OFICIAL_v1_8_8.json,Revisao post hoc nao retreina
+DIST-01,"113 segundos OOF: MAE 1,574 m contra referencia nominal",B,farol mesmo voo,T04_pareamento_oof_113_segundos.csv,AUDITORIA_REGRESSAO_OOF_v1_9_2.json,Nao equivale a validacao fisica de metros
+DIST-02,"109 segundos filtrados: MAE 1,424 m contra referencia nominal",B,subconjunto aceito do farol,T06_regressao_oof_resumo_filtro.csv,AUDITORIA_REGRESSAO_OOF_v1_9_2.json,Filtro abstencao condicionado ao mesmo voo
+DIST-03,"Equacao global d=4442,54846 * w^(-1,277151)",A,farol ajuste global,T04_pareamento_oof_113_segundos.csv,AUDITORIA_REGRESSAO_OOF_v1_9_2.json,Equacao global nao representa os parametros dos folds OOF
+GEOM-01,35 das 75 imagens GT vinculadas à edicao farol,A,voo farol,T09_correspondencia_75_GT_farol_e_videos.csv,RELATORIO_PROPAGACAO_GT_YOLO_OOF_v1_9_4.md,"28 links da amostra sao automaticos, 7 manuais"
+GEOM-02,"14/28 propostas YOLO atingiram IoU≥0,50 no subconjunto",B,35 imagens da edicao farol,T07_GT_farol_35_imagens_vinculadas.csv,RELATORIO_PROPAGACAO_GT_YOLO_OOF_v1_9_4.md,Nao e AP/mAP no dataset test completo
+NEW-01,YOLO emite 3764 e temporal 1853 de 5142 quadros,A,novo voo,T12_metodos_cobertura_5142_quadros.csv,AUDITORIA_OPERACIONAL_v1_9_5.json,Cobertura ROI nao significa localizacao correta
+NEW-02,Metodo temporal usou 6 sementes supervisionadas,A,novo voo,T12_metodos_cobertura_5142_quadros.csv,AUDITORIA_OPERACIONAL_v1_9_5.json,Nao definir autonomo
+NEW-03,"Avaliacao 120: 98 positivos,22 incertos, sem negativo",A,novo voo mesma aquisicao,T16_amostra_120_PRIMARIA_CONGELADA.csv,AUDITORIA_AMOSTRA_120_v1_9_6_1.json,Sem especificidade/taxa falso alarme em negativos
+NEW-04,"IoU50: 9 TP YOLO, 8 temporal em 98 positivos",B,novo voo,T14_metricas_120_primaria_vs_poshoc.csv,AUDITORIA_AMOSTRA_120_v1_9_6_1.json,Condicionado a positivos; NAO oficial mAP
+NEW-05,"Post hoc: 110 positivos,10 incertos, TP inalterados",B,"novo voo, analise dirigida",T14_metricas_120_primaria_vs_poshoc.csv,AUDITORIA_SENSIBILIDADE_POST_HOC_v1_9_7_1.json,Separar do resultado principal
+INT-01,Regressao transferida em 131/172 segundos,A,novo voo 5142 quadros,T18_pipeline_172_segundos.csv,AUDITORIA_NUMERICA_PIPELINE_v1_9_8_1.json,Transferencia entre camera e ambiente NAO calibrada
+INT-02,"Depth Pro Z em 126 quadros,46 instantes agendados sem ROI",A,novo voo 1Hz,T19_depth_pro_126_medidas_Z_exploratorias.csv,AUDITORIA_NUMERICA_PIPELINE_v1_9_8_1.json,"Z axial com ROI nao validada, nao R radial"
+INT-03,640 quadros sem caixa ainda exibiam regressao agregada do segundo,A,novo voo,T17_pipeline_5142_quadros.csv,AUDITORIA_VIDEO_CORRIGIDO_v1_9_8_3.json,Apresentacao corrigida; nao causal por quadro
+INT-04,Saida audiovisual corrigida 5142 quadros segundo relatorio local,A,video renderizado no PC,T17_pipeline_5142_quadros.csv,AUDITORIA_VIDEO_CORRIGIDO_v1_9_8_3.json,"MP4 integral nao submetido, somente pranchas JPEG"
+INT-05,Exatidao fisica no novo voo nao demonstrada,C,novo voo sem referencia certificada,T18_pipeline_172_segundos.csv,PROVENIENCIA_PIPELINE_v1_9_8.json,Nao calcular MAE fisico no novo voo

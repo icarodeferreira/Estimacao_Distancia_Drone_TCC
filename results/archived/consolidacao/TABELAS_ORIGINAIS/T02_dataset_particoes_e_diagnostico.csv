@@ -1,0 +1,4 @@
+﻿particao,imagens,gt_reportados,negativas,ressalva
+train,317,297,19,1 linha invalida; 317-19 nao implica 298 objetos; contagem treino historica
+val,84,78,6,contagem do GT reportada e auditada
+test,75,67,8,contagem do GT reportada e auditada

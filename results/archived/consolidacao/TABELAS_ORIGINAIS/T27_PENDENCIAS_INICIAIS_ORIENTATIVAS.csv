@@ -1,0 +1,12 @@
+﻿id,ponto,gravidade,origem,fonte_disponivel,status,encaminhamento,apoio
+B01,"mAP50 teste historico de 0,055 no parecer de 08/10",Importante,Banca SIMULADA 08/10,Auditorias controladas v1.8.9,"Parcial, exige atualizar manuscrito","Diferenciar resoluções teste960=0,04407 e teste1920=0,07784, sem tratar 0,055 como resultado controlado",T01
+B02,"Baixa qualidade de detecção, sobretudo drones pequenos",Critico,Banca simulada e auditorias,v1.8.9 / v1.9.6.1,Resultados complementares disponíveis,"Apresentar mAP teste, IoU, separação por tamanho, limites de validade, sem alegar detector robusto",T01 T15
+B03,Profundidade axial Z vs alcance radial R,Critico,Banca simulada e auditorias,v1.9.2 / v1.9.8.1,Não solucionável como validação física,"Descrever grandezas compatíveis, reportar comparacoes como exploratorias",T04 T19
+B04,"Referência métrica nominal, sincronização e câmera",Critico,Banca simulada e auditorias,"v1.9.2, v1.9.8",Pendencia fisica não resolvida,Reconhecer hipotese e incerteza nominal; ausência de medição certificada no novo voo,T04 T18
+B05,Validação temporal interna sem purga/seleção na mesma sequência,Alto,Banca simulada,v1.9.2,Limitação metodologica persistente,Não afirmar validação entre voos; distinguir modelo global e folds OOF,T03 T04
+B06,Protocolo de novo voo e avaliação independente,Alto,Objetivos do TCC,v1.9.6 v1.9.7.1,Complemento experimental presente,"Adicionar metodo 120 quadros, grupos temporais, excluídos incertos, revisão separada",T14 T16
+B07,Risco na associação temporal supervisionada,Alto,Auditorias novo voo,v1.9.5 v1.9.6,Documentada,"Explicitar 6 sementes e perda de cobertura, não dizer autônomo",T12 T14
+B08,Tabelas e gráficos precisam incorporar etapa integrada,Alto,Novos dados pós-banca,v1.9.8.1 v1.9.8.3,Evidências prontas,"Integrar regressao131/172, Depth126/172, status46 e exemplo ROI incorreta",T17 T19
+B09,"Formatação, margens, resumos, pré-textuais e legendas",Medio,Banca SIMULADA 08/10,Fontes .tex atuais e normas institucionais necessárias,Sem verificação atual,Conferir normas e compilar o projeto LaTeX atual antes de resolver,parecer simulado
+B10,Bibliografia e precisão das referências,Medio,Banca SIMULADA 08/10,references.bib atual necessario,Sem verificação atual,Auditar DOI e citacoes sem fabricar referencias,bib pendente
+B11,Analise de plágio e estimativa de % IA,Medio,Banca SIMULADA 08/10,Sem base de comparação institucional,Indeterminavel,Não quantificar porcentagens sem método validado; conferir citações e originalidade,parecer simulado

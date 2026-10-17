@@ -1,0 +1,18 @@
+{
+  "yolo": {
+    "path": "models/best.pt",
+    "sha256": "2ca8f89b9d946a6a06a12177db471cb7419b69b4a25ce619cc608c55267a61d8",
+    "version": "Ultralytics 8.4.124 (metadados do checkpoint)",
+    "license": "consultar termos Ultralytics e direitos do treinamento; autorização de redistribuição não registrada"
+  },
+  "depth_pro": {
+    "asset": "depth_pro",
+    "url": "https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt",
+    "sha256": null,
+    "status": "obter na fonte e registrar hash; histórico desconhecido"
+  },
+  "calibration": {
+    "origin": "Farol; XR conforme protocolo original",
+    "license": "definição pelo titular pendente"
+  }
+}

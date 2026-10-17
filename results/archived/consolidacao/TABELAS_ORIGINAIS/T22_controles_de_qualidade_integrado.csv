@@ -1,0 +1,6 @@
+﻿motivo,segundos,origem
+menos_de_5_caixas,16,"auditoria v1.9.8.1, abstencao por segundo"
+largura_IQR_instavel,8,"auditoria v1.9.8.1, abstencao por segundo"
+salto_hampel_causal,7,"auditoria v1.9.8.1, abstencao por segundo"
+largura_IQR_instavel;salto_hampel_causal,7,"auditoria v1.9.8.1, abstencao por segundo"
+menos_de_5_caixas;salto_hampel_causal,3,"auditoria v1.9.8.1, abstencao por segundo"

@@ -1,0 +1,22 @@
+[
+  {
+    "asset": "farol_video",
+    "filename": "farol.mov",
+    "url": null,
+    "sha256": "0cf939776f4a1410f3a6394f6b91b3daaf943ab40569991a7dd83865e157453b",
+    "status": "suplemento privado; autorização pública não registrada"
+  },
+  {
+    "asset": "novo_voo_video",
+    "filename": "IMG_5962_editado.mov",
+    "url": null,
+    "sha256": "3bc510982efea93d18734d39d670e7661edc250f55e9e28e85ade35b67779221",
+    "status": "ausente; hash declarado em origem"
+  },
+  {
+    "asset": "depth_pro",
+    "url": "https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt",
+    "sha256": null,
+    "status": "obter na fonte e registrar hash; histórico desconhecido"
+  }
+]

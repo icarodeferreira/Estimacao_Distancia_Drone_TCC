@@ -1,0 +1,37 @@
+﻿id,experimento,indicador,valor,unidade,denominador,natureza_evidencia,fonte_relativa,ressalva
+K01,farol,train_dataset,317,imagens,particao treino,auditoria dataset,T02_dataset_particoes_e_diagnostico.csv,1 anotacao treino invalida
+K02,farol,validacao_imgs,84,imagens,particao val,auditoria dataset,T02_dataset_particoes_e_diagnostico.csv,dados temporalmente correlacionados
+K03,farol,teste_imgs,75,imagens,particao test,auditoria dataset,T02_dataset_particoes_e_diagnostico.csv,67 positivos 8 negativos
+K04,farol_detector,mAP50_validacao_imgsz960,0.653,proporcao,validacao,avaliacao oficial Ultralytics,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,"mAP depende da particao, resolucao e configuracao"
+K04B,farol_detector,mAP50_95_validacao_imgsz960,0.364,proporcao,validacao,avaliacao oficial Ultralytics,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,"limiares IoU agregados 0,5-0,95"
+K05,farol_detector,mAP50_validacao_imgsz1920,0.863,proporcao,validacao,avaliacao oficial Ultralytics,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,"mAP depende da particao, resolucao e configuracao"
+K05B,farol_detector,mAP50_95_validacao_imgsz1920,0.539,proporcao,validacao,avaliacao oficial Ultralytics,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,"limiares IoU agregados 0,5-0,95"
+K06,farol_detector,mAP50_teste_imgsz960,0.04407,proporcao,teste,avaliacao oficial Ultralytics,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,"mAP depende da particao, resolucao e configuracao"
+K06B,farol_detector,mAP50_95_teste_imgsz960,0.01098,proporcao,teste,avaliacao oficial Ultralytics,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,"limiares IoU agregados 0,5-0,95"
+K07,farol_detector,mAP50_teste_imgsz1920,0.07784,proporcao,teste,avaliacao oficial Ultralytics,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,"mAP depende da particao, resolucao e configuracao"
+K07B,farol_detector,mAP50_95_teste_imgsz1920,0.01203,proporcao,teste,avaliacao oficial Ultralytics,T01_YOLO_metricas_oficiais_val_teste_960_1920.csv,"limiares IoU agregados 0,5-0,95"
+K08,farol_regressao_OOF,antes_qualidade_n,113,segundos,118 segundos com referencia nominal,OOF no mesmo voo,T06_regressao_oof_resumo_filtro.csv,OOF nao e aquisicao independente
+K08A,farol_regressao_OOF,antes_qualidade_mae,1.5744298319428875,metros nominais,113 segundos aceitos,erro vs referencia nominal,T06_regressao_oof_resumo_filtro.csv,nao mensuracao fisica certificada
+K08B,farol_regressao_OOF,antes_qualidade_rmse,2.3922869291327435,metros nominais,113 segundos aceitos,erro vs referencia nominal,T06_regressao_oof_resumo_filtro.csv,nao medir superioridade fisica de estimadores
+K09,farol_regressao_OOF,apos_qualidade_n,109,segundos,118 segundos com referencia nominal,OOF no mesmo voo,T06_regressao_oof_resumo_filtro.csv,OOF nao e aquisicao independente
+K09A,farol_regressao_OOF,apos_qualidade_mae,1.4241446197900662,metros nominais,109 segundos aceitos,erro vs referencia nominal,T06_regressao_oof_resumo_filtro.csv,nao mensuracao fisica certificada
+K09B,farol_regressao_OOF,apos_qualidade_rmse,1.8076959357008433,metros nominais,109 segundos aceitos,erro vs referencia nominal,T06_regressao_oof_resumo_filtro.csv,nao medir superioridade fisica de estimadores
+K10,farol,GT_vinculados_na_edicao,35,imagens,75 GT teste,diagnostico de correspondencia,T09_correspondencia_75_GT_farol_e_videos.csv,"7 links confirmados humano, 28 automaticos"
+K11,farol,GT_no_fora_da_edicao,40,imagens,75 GT teste,diagnostico de correspondencia,T09_correspondencia_75_GT_farol_e_videos.csv,não é falha de deteccao
+K12,farol,GT_ligados_IoU50,14,caixas,28 GT positivos vinculados,diagnostico por melhor proposta de confianca,T07_GT_farol_35_imagens_vinculadas.csv,nao equivale ao mAP do teste completo
+K13,novo_voo_detector,quadros_ROI_original,3764,quadros,5142 quadros,disponibilidade de caixa,T12_metodos_cobertura_5142_quadros.csv,"não é recall, método temporal 6 sementes"
+K14,novo_voo_detector,quadros_ROI_temporal_supervisionado,1853,quadros,5142 quadros,disponibilidade de caixa,T12_metodos_cobertura_5142_quadros.csv,"não é recall, método temporal 6 sementes"
+K15,novo_voo_gt_primario,quadros_amostrados,120,quadros,40 intervalos x3,amostragem temporal,T16_amostra_120_PRIMARIA_CONGELADA.csv,único voo dependente temporalmente
+K16,novo_voo_gt_primario,positivos_avaliaveis,98,quadros,120 amostrados,GT humano,T16_amostra_120_PRIMARIA_CONGELADA.csv,"22 incertos, 0 negativos confirmados"
+K17,novo_voo_GT_primario,yolo_original_TP_iou50,9,quadros,98 positivos,GT IoU >=0.50,T14_metricas_120_primaria_vs_poshoc.csv,"caixa unica, nao mAP"
+K17P,novo_voo_GT_primario,yolo_original_precisao,11.534243844083342,percentual ponderado,98 positivos avaliateis,condicional positivo,T14_metricas_120_primaria_vs_poshoc.csv,nao estima falso alarme em negativos
+K17R,novo_voo_GT_primario,yolo_original_revocacao,9.181082367878112,percentual ponderado,98 positivos avaliaveis,condicional positivo,T14_metricas_120_primaria_vs_poshoc.csv,nao valida outros voos
+K18,novo_voo_GT_primario,temporal_TP_iou50,8,quadros,98 positivos,GT IoU >=0.50,T14_metricas_120_primaria_vs_poshoc.csv,"caixa unica, nao mAP"
+K18P,novo_voo_GT_primario,temporal_precisao,17.391304347826086,percentual ponderado,98 positivos avaliateis,condicional positivo,T14_metricas_120_primaria_vs_poshoc.csv,nao estima falso alarme em negativos
+K18R,novo_voo_GT_primario,temporal_revocacao,8.157435327725757,percentual ponderado,98 positivos avaliaveis,condicional positivo,T14_metricas_120_primaria_vs_poshoc.csv,nao valida outros voos
+K19,novo_voo_poshoc,novos_positivos,12,quadros,22 incertos originais revisados,analise pos-hoc,T13_amostra_120_primaria_mais_sensibilidade.csv,metrica primaria permanece congelada
+K20,novo_voo_pipeline,quadros_integrados,5142,quadros,video completo,execucao registrada,T17_pipeline_5142_quadros.csv,reutilizou cache YOLO
+K21,novo_voo_pipeline,segundos_regressao,131,segundos,172 segundos representados,regressao transferida,T18_pipeline_172_segundos.csv,camera nao verificada; estimativa exploratoria
+K22,novo_voo_pipeline,depth_emissoes,126,quadros,172 instantes programados,Depth Z axial,T19_depth_pro_126_medidas_Z_exploratorias.csv,roi nao validada como drone
+K23,novo_voo_pipeline,instantes_agendados_sem_ROI,46,quadros,172 instantes Depth previstos,abstencao por ausência de ROI,T21_status_depth_grade_1hz.csv,não são falhas de processamento do modelo
+K24,novo_voo_pipeline,quadros_sem_roi_com_regressao_do_segundo,640,quadros,5142 quadros,apresentacao temporal,T17_pipeline_5142_quadros.csv,não é resultado causal individual do quadro

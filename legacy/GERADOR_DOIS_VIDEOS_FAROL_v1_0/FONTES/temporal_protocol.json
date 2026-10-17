@@ -1,0 +1,96 @@
+{
+  "created_at_utc": "2026-09-25T12:37:18+00:00",
+  "experiment_role": "functional high-frequency temporal case study",
+  "does_not_replace_primary_held_out_test": true,
+  "mode": "full",
+  "video": "C:\\TCC_Drone_local\\video_final_farol_original\\video_final_farol.mov",
+  "telemetry_file": "C:\\TCC_Drone_local\\video_final_farol_original\\FlightRecord_2026-07-23_[15-03-14].csv",
+  "native_fps": 30.0,
+  "target_frames": 3537,
+  "detector": "yolo_proprio",
+  "yolo_weights": "C:\\TCC_Drone_local\\treinos_transferencia\\yolo26n_aod4_finetune_own_1920_seed42\\weights\\best.pt",
+  "yolo_imgsz": 1920,
+  "depth_protocol": {
+    "source": "full_frame",
+    "roi_candidate": "s00_p25_m",
+    "fixed_focal_px": 1440.0,
+    "calibration": "log_linear",
+    "role": "baseline_comparator",
+    "intercept": 1.4600571394959514,
+    "slope": 0.5026751660343942
+  },
+  "synchronization": {
+    "timecode_format": "HH:MM:SS:FF",
+    "timecode_fps": 30.0,
+    "takeoff_timecode": "00:00:00:10",
+    "crop_start_timecode": "00:00:02:25",
+    "original_video_takeoff_s": 0.3333333333333333,
+    "telemetry_takeoff_s": 2.3,
+    "crop_start_in_original_video_s": 2.8333333333333335,
+    "telemetry_at_crop_start_s": 4.8,
+    "frame_timestamp": "OpenCV CAP_PROP_POS_MSEC with frame-index fallback",
+    "telemetry_interpolation": "linear"
+  },
+  "camera_geometry": {
+    "camera_height_m": 1.5,
+    "camera_to_home_horizontal_m": 1.5,
+    "unknown_azimuth_handling": "nominal orthogonal composition plus partial min/max bounds"
+  },
+  "abstention": {
+    "confidence_min": 0.25,
+    "box_width_min_px": 10.0,
+    "box_height_min_px": 5.0,
+    "valid_depth_pixels_min": 6,
+    "estimate_range_m": [
+      1.0,
+      150.0
+    ]
+  },
+  "independence_warning": "Adjacent frames and interpolated telemetry labels are not independent observations.",
+  "outputs": {
+    "yolo_csv": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\yolo_all_frames.csv",
+    "depth_csv": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\depth_all_frames.csv",
+    "metrics_json": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\temporal_metrics.json",
+    "per_second_csv": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\metrics_per_second.csv",
+    "zone_csv": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\metrics_by_zone.csv",
+    "legacy_depth_annotated_video": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\pipeline_farol_30fps_annotated.mp4",
+    "final_box_width_annotated_video": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\pipeline_farol_box_width_final_annotated.mp4",
+    "final_report_markdown": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\relatorio_final_metodos.md",
+    "final_summary_json": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800\\resumo_final_metodos.json"
+  },
+  "selected_distance_estimator": {
+    "status": "provisional_internal_validation_only",
+    "model": "box_width_log",
+    "equation": "distance_m = constant * median_box_width_px ** exponent",
+    "constant": 4442.5484604804715,
+    "exponent": -1.2771511434180072,
+    "intercept_log_m": 8.398983468349833,
+    "input_resolution_px": [
+      3840,
+      2160
+    ],
+    "aggregation": "median width of reliable YOLO boxes per second",
+    "yolo_reliable_confidence": 0.25,
+    "minimum_box_width_px": 10.0,
+    "minimum_box_height_px": 5.0,
+    "quality_gate": {
+      "minimum_reliable_frames_per_second": 5,
+      "maximum_relative_width_iqr": 0.35,
+      "causal_hampel_history_seconds": 5,
+      "causal_hampel_k": 3.0,
+      "minimum_log_width_jump": 0.35
+    },
+    "limitations": [
+      "single flight internal temporal validation",
+      "fixed zoom required",
+      "same drone appearance required",
+      "only two valid seconds above 40 m"
+    ]
+  },
+  "selected_method_evaluation": {
+    "scientific_primary": "box_width_log OOF leave-one-20s-block-out without quality filtering",
+    "operational_secondary": "same OOF predictions with fixed quality-abstention rule",
+    "deployment_equation_metrics_warning": "Equation fitted on all valid seconds; performance must be reported from OOF predictions.",
+    "zoom_requirement": "fixed zoom; zoomed original tail excluded from primary evaluation"
+  }
+}

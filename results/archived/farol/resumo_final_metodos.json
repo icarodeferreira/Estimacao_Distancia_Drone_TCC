@@ -1,0 +1,77 @@
+{
+  "created_at_utc": "2026-09-25T12:31:37+00:00",
+  "scientific_primary": {
+    "method": "Largura YOLO — OOF primário",
+    "role": "selected_primary",
+    "evaluation": "leave_one_20s_block_out",
+    "coverage_pct": 95.76271186440678,
+    "n_seconds": 113,
+    "mae_m": 1.5744298319428875,
+    "rmse_m": 2.3922869291327444,
+    "median_ae_m": 1.1833093980098095,
+    "mape_pct": 13.92702364867514,
+    "bias_m": -0.1707196738356644,
+    "r2": 0.9515640626701528,
+    "spearman": 0.954984852172976,
+    "within_1m_pct": 43.36283185840708,
+    "within_20pct_pct": 82.30088495575221,
+    "legacy_5m_or_20pct_pct": 99.1150442477876
+  },
+  "operational_secondary": {
+    "method": "Largura YOLO — OOF com abstenção",
+    "role": "operational_secondary",
+    "evaluation": "leave_one_20s_block_out",
+    "coverage_pct": 92.3728813559322,
+    "n_seconds": 109,
+    "mae_m": 1.424144619790066,
+    "rmse_m": 1.8076959357008435,
+    "median_ae_m": 1.16453448430941,
+    "mape_pct": 12.64175704274228,
+    "bias_m": -0.3161338160790768,
+    "r2": 0.9730359604965586,
+    "spearman": 0.968091391188288,
+    "within_1m_pct": 44.03669724770643,
+    "within_20pct_pct": 84.40366972477065,
+    "legacy_5m_or_20pct_pct": 100.0
+  },
+  "provisional_equation": {
+    "status": "provisional_internal_validation_only",
+    "model": "box_width_log",
+    "equation": "distance_m = constant * median_box_width_px ** exponent",
+    "constant": 4442.5484604804715,
+    "exponent": -1.2771511434180072,
+    "intercept_log_m": 8.398983468349833,
+    "input_resolution_px": [
+      3840,
+      2160
+    ],
+    "aggregation": "median width of reliable YOLO boxes per second",
+    "yolo_reliable_confidence": 0.25,
+    "minimum_box_width_px": 10.0,
+    "minimum_box_height_px": 5.0,
+    "quality_gate": {
+      "minimum_reliable_frames_per_second": 5,
+      "maximum_relative_width_iqr": 0.35,
+      "causal_hampel_history_seconds": 5,
+      "causal_hampel_k": 3.0,
+      "minimum_log_width_jump": 0.35
+    },
+    "limitations": [
+      "single flight internal temporal validation",
+      "fixed zoom required",
+      "same drone appearance required",
+      "only two valid seconds above 40 m"
+    ]
+  },
+  "interpretation": {
+    "depth_pro": "Evaluated comparator; insufficient metric performance in this sequence.",
+    "box_width": "Selected estimator under internal temporally blocked validation.",
+    "external_validation": "Not available; coefficients remain provisional."
+  },
+  "limitations": [
+    "single flight internal temporal validation",
+    "fixed zoom required",
+    "same drone appearance required",
+    "only two valid seconds above 40 m"
+  ]
+}

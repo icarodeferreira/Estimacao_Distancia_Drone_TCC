@@ -1,0 +1,18 @@
+﻿arquivo,codigo,descricao,fonte,limitacao
+F01_map50_val_teste_960_1920.png,F01,"mAP50 controlado, detecção treino/val/test? apresenta validacao/teste; não inferir significância",própria derivada,A legenda deve preservar a distinção entre estimativa e medição
+F02_metricas_amostra_120_primaria.png,F02,métricas ponderadas condicionais em 98 positivos da avaliação principal de 120,própria derivada,A legenda deve preservar a distinção entre estimativa e medição
+F03_acertos_por_largura_GT_120.png,F03,acertos geométricos por largura GT (não ponderados),própria derivada,A legenda deve preservar a distinção entre estimativa e medição
+F04_regressao_OOF_referencia_nominal.png,F04,"OOF temporal no farol vs referência nominal, sem MAE físico certificado",própria derivada,A legenda deve preservar a distinção entre estimativa e medição
+F05_regressao_disponibilidade_172_segundos.png,F05,"disponibilidade de estimativas por segundo no novo vídeo, não correção",própria derivada,A legenda deve preservar a distinção entre estimativa e medição
+F06_distribuicao_Z_depth_pro.png,F06,"distribuição Z axial Depth Pro em ROIs candidatas, NÃO distância real do drone",própria derivada,A legenda deve preservar a distinção entre estimativa e medição
+F07_recall_condicional_principal_vs_poshoc.png,F07,efeito da revisão post hoc nas métricas condicionais; detector inalterado,própria derivada,A legenda deve preservar a distinção entre estimativa e medição
+F08_modelos_OOF_oito_modelos.png,F08,figura histórica 8 modelos OOF do farol,figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F09_gt_yolo_propagacao_larguras.png,F09,figura histórica comparativa largura YOLO vs GT no farol,figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F10_gt_small_sample_hist.png,F10,figura histórica acertos por tamanho aparente no novo voo,figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F11_depth_roi_mascaras.png,F11,efeitos de máscaras de ROI no Depth Pro (exploratório),figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F12_visao_geral_8_quadros_video_corrigido.jpg,F12,"prancha JPEG do vídeo anotado, amostras inspecionadas sem validação integral do MP4",figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F13_exemplo_erro_alvo_no_chao.jpg,F13,"quadro 0: ROI sobre vegetação, drone em outro local; demonstração qualitativa de falha",figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F14_exemplo_candidato_drone_no_ceu.jpg,F14,"quadro 300: exemplo de ROI candidata aparentemente sobre drone, não verifica erro em metros",figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F15_exemplo_sem_roi_elegivel.jpg,F15,quadro 900: demonstra status sem ROI no instante Depth agendado,figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F16_exemplo_regressao_sem_caixa.jpg,F16,"quadro 1905: regressão por segundo disponível, nenhuma ROI no quadro",figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição
+F17_exemplo_vegetacao_quadro_final.jpg,F17,"último quadro: ROI sobre vegetação, não confirma alvo",figura histórica copiada do experimento,A legenda deve preservar a distinção entre estimativa e medição

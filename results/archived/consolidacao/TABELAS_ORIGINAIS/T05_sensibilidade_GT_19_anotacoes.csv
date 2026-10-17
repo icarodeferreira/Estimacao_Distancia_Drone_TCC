@@ -1,0 +1,5 @@
+﻿resolucao,metrica,original,revisado,delta,natureza
+1920,precision,0.233377272698942,0.233377272698942,0.0,apos_revisao_GT_no_teste_sem_retreinamento
+1920,recall,0.19402985074626866,0.19402985074626866,0.0,apos_revisao_GT_no_teste_sem_retreinamento
+1920,map50,0.07783969113377032,0.07783969113377032,0.0,apos_revisao_GT_no_teste_sem_retreinamento
+1920,map50_95,0.012025517923143846,0.012025517923143846,0.0,apos_revisao_GT_no_teste_sem_retreinamento

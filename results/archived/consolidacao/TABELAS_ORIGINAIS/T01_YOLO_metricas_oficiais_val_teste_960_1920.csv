@@ -1,0 +1,5 @@
+﻿experimento,particao,imgsz_px,n_imagens,n_gt_drone,n_imagens_negativas,precision,recall,map50,map50_95,origem,nota
+farol_dataset_proprio,validacao,960,84,78,6,0.978,0.603,0.653,0.364,Relatorio_Geral_2026-10-10 secao 4.1; comparacao_controlada,rounded as reported; no new inference
+farol_dataset_proprio,validacao,1920,84,78,6,0.981,0.808,0.863,0.539,Relatorio_Geral_2026-10-10 secao 4.1; comparacao_controlada,rounded as reported; no new inference
+farol_dataset_proprio,teste,960,75,67,8,0.1517,0.1791,0.04407,0.01098,Relatorio_Geral_2026-10-10 secao 4.1; comparacao_controlada,rounded as reported; no new inference
+farol_dataset_proprio,teste,1920,75,67,8,0.2334,0.194,0.07784,0.01203,Relatorio_Geral_2026-10-10 secao 4.1; comparacao_controlada,rounded as reported; no new inference

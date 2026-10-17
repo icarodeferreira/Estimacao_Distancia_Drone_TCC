@@ -1,0 +1,10 @@
+﻿versao,etapa,escopo,status,resultado_chave
+1.8.9,Deteccao original/teste,"Confrontos 960/1920, correcoes GT alternativas",Fechada,"Metrica teste 1920 mAP50 0,07784; GT19 nao muda mAP"
+1.9.2,Regressao interna no farol,113 seg OOF; 109 aprovados filtro,"Fechada, alcance nominal","MAE 1,574/1,424 m, nao distancia fisica independente"
+1.9.3.5,Vinculo GT-test/edicao farol,"75 GT, 35 na edicao, 40 fora",Parcialmente confirmado,7 links humano; 28 links automaticamente indicados
+1.9.4,Propagacao geom. GT × YOLO,"35 imgs, 28 positivas, 11 segundos OOF",Diagnostica,14 TP de IoU50 entre 28 propostas na janela; nao causal
+1.9.5,Aval. operacional novo voo,5142 frames; 2 seletores,Descritiva,"Selecao YOLO 3764, temporal1853 com 6 sementes"
+1.9.6.1,Teste temporal novo voo,"120 amostrados/40 estratos, 98 positivos,22 incertos",Primaria,9 TP YOLO e 8 temporal; sem GT negativo
+1.9.7.1,Sensibilidade das anotacoes,Revisao direcionada de 40,Pos-hoc,"12 novos positivos, 10 incertos, TP permanece"
+1.9.8.1,Pipeline novo voo,"5142 frames, 172 segundos, 126 Depth",Integrado exploratorio,131 seg regressao; nao error MAE fisico
+1.9.8.3,Video corrigido e aud. visual,"Amostras JPEG, relatorio local MP4",Apresentacao corrigida,640 quadros sem ROI com regressao do segundo; MP4 nao decodificado remotamente

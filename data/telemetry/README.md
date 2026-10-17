@@ -1,0 +1,1 @@
+Telemetria bruta fora do Git. Para reproduzir as inferências do Farol, obtenha farol_original.csv com o autor e coloque nesta pasta. A reprodução analítica do notebook 01 usa inferências arquivadas e dispensa esse arquivo.

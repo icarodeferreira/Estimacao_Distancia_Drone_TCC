@@ -1,0 +1,3 @@
+frame_idx,t_video_s,drone_visivel,original_emite,original_iou,original_situacao,depth_pro_Z_axial_p25_m,distancia_regressao_exploratoria_m
+630,21.0,sim,True,0.3745605653577882,FP_MAIS_FN_LOCALIZACAO,43.78142356872559,7.871939747296924
+4020,134.0,sim,True,0.4013169170555307,FP_MAIS_FN_LOCALIZACAO,41.9412145614624,16.42114549045681

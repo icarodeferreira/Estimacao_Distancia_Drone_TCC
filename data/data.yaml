@@ -1,0 +1,10 @@
+# Use scripts/preparar_dataset.py para caminho absoluto e remapeamento.
+path: ../inputs/dataset
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: airplane
+  1: bird
+  2: drone
+  3: helicopter

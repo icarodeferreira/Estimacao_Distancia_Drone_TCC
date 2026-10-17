@@ -1,0 +1,9 @@
+inputs/
+outputs/
+external/
+__pycache__/
+*.pyc
+*.download
+models/*.pt
+legacy/**/*.csv
+!legacy/**/dados/*.csv

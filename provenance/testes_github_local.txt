@@ -1,0 +1,12 @@
+test_interpolation (test_core.CoreTests.test_interpolation) ... ok
+test_missing_metrics (test_core.CoreTests.test_missing_metrics) ... ok
+test_no_reference (test_core.CoreTests.test_no_reference) ... ok
+test_pts_render (test_core.CoreTests.test_pts_render) ... ok
+test_roi (test_core.CoreTests.test_roi) ... ok
+test_time (test_core.CoreTests.test_time) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.377s
+
+OK
+Sem geometria: telemetria não convertida em alcance.

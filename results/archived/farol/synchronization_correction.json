@@ -1,0 +1,13 @@
+{
+  "timecode_format": "HH:MM:SS:FF",
+  "timecode_fps": 30.0,
+  "takeoff_timecode": "00:00:00:10",
+  "takeoff_original_s": 0.3333333333333333,
+  "crop_start_timecode": "00:00:02:25",
+  "crop_start_original_s": 2.8333333333333335,
+  "telemetry_takeoff_s": 2.3,
+  "telemetry_at_crop_start_s": 4.8,
+  "legacy_output_dir": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full",
+  "corrected_output_dir": "C:\\TCC_Drone_local\\resultados_pipeline_farol_30fps\\yolo_proprio\\full\\sync_tc_00000225_telemetry_004800",
+  "reused_inference": true
+}
