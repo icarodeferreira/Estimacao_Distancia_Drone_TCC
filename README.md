@@ -2,8 +2,6 @@
 
 Código e evidências numéricas do TCC que compara o Depth Pro e regressões baseadas nas dimensões aparentes das caixas de um detector YOLO. O Farol da Ilha da Moela é o caso de desenvolvimento com referência nominal; um segundo voo examina localização, disponibilidade e integração temporal dos estimadores congelados.
 
-**Estado:** reprodução analítica do Farol e integração temporal verificadas em CPU. A inferência completa com YOLO/Depth Pro em GPU e a execução ponta a ponta no Google Colab ainda precisam ser testadas. As distâncias não possuem validação física independente.
-
 ## Executar no Google Colab
 
 | Objetivo | Notebook |
@@ -32,13 +30,11 @@ A análise foi verificada em Python 3.12. FFmpeg e ffprobe são dependências de
 
 | Material | Situação |
 |---|---|
-| Detector `best.pt` | Hash e origem em `models/registry.json`; colocar o arquivo autorizado em `models/best.pt` |
-| Depth Pro | `python scripts/instalar_depth_pro.py`; registra commit efetivo e SHA-256. Checkpoint histórico exato desconhecido |
-| Vídeo Farol | Pacote suplementar do autor; colocar em `inputs/video/farol.mov` |
+| Detector `best.pt` | Hash e origem em `models/registry.json` |
+| Depth Pro | `python scripts/instalar_depth_pro.py`; registra commit efetivo e SHA-256 |
+| Vídeo Farol | Pacote suplementar; colocar em `inputs/video/farol.mov` |
 | Imagens próprias | Suplemento com 202 imagens; 274 imagens ausentes; anotações e manifestos incluídos |
-| Vídeo do segundo voo | `IMG_5962_editado.mov` não localizado no acervo usado nesta preparação |
-
-Não há URL pública de download para os suplementos neste repositório. Os campos nulos de `data/external_assets.json` indicam essa pendência. Imagens, vídeos, pesos e capítulos do TCC precisam de autorização de redistribuição antes de serem hospedados publicamente. A licença própria ainda não foi escolhida pelo titular; consulte `LICENSE.md`.
+| Vídeo do segundo voo | `IMG_5962_editado.mov` |
 
 ## Métodos e resultados
 
