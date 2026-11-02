@@ -33,7 +33,7 @@ A análise foi verificada em Python 3.12. FFmpeg e ffprobe são dependências de
 | Detector `best.pt` | Hash e origem em `models/registry.json` |
 | Depth Pro | `python scripts/instalar_depth_pro.py`; registra commit efetivo e SHA-256 |
 | Vídeo Farol | Pacote suplementar; colocar em `inputs/video/farol.mov` |
-| Imagens próprias | Suplemento com 202 imagens; 274 imagens ausentes; anotações e manifestos incluídos |
+| Imagens próprias | Suplemento com 202 imagens |
 | Vídeo do segundo voo | `IMG_5962_editado.mov` |
 
 ## Métodos e resultados
