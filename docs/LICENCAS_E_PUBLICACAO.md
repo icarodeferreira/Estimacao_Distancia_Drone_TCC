@@ -1,9 +1,25 @@
 # Licenças e publicação
 
-O repositório de código e resultados numéricos está público. Os suplementos de origem não estão automaticamente disponíveis ou autorizados para redistribuição. Antes de adicionar materiais, registre autorizações de vídeos, imagens, telemetria, pesos e texto. Exclua ou anonimize coordenadas e identificadores pessoais quando necessário. Use links externos para arquivos grandes somente quando o destino tiver autorização de distribuição.
+## Código próprio
 
-A licença própria do código está pendente de escolha pelo titular. `LICENSE.md` não concede direitos sobre materiais de terceiros. Preserve avisos das fontes originais. Consulte os termos oficiais de Ultralytics, Depth Pro e de cada conjunto de dados; não aplique uma licença única a todo o pacote sem verificar a compatibilidade.
+O titular adotou a GNU Affero General Public License, versão 3 (AGPL-3.0-only), para o código próprio. O texto integral está em [LICENSE](../LICENSE) e o escopo em [LICENSE.md](../LICENSE.md). Preserve autoria, avisos de terceiros e cumpra as condições de disponibilização do código-fonte correspondente.
 
-O arquivo `data/external_assets.json` contém campos de URL pública inicialmente nulos. Preencha após hospedar legalmente os materiais; conserve tamanho e SHA-256. Pesos e vídeos podem ir a releases/armazenamento autorizado, mantendo no Git somente manifests e documentação.
+## Componentes e materiais externos
 
-O TCC incluído é uma versão de trabalho recuperada, não um PDF final aprovado. Confirme título, autoria, instituição e autorização antes de publicar os capítulos. Complete `CITATION.cff` com a referência bibliográfica definitiva.
+A AGPL do código próprio não relicencia automaticamente dependências, pesos, datasets ou conteúdo científico.
+
+| Material | Termos aplicáveis |
+|---|---|
+| Ultralytics/YOLO e best.pt | Preservar os termos da Ultralytics; a empresa indica AGPL-3.0 como licença padrão de seus modelos treinados. |
+| Depth Pro | Licença original da Apple correspondente à versão utilizada; manter os avisos de redistribuição. |
+| AOD 4, Anti-UAV e outras bases | Licença específica do conjunto e da variante utilizada. |
+| Vídeos, imagens, telemetria, texto e figuras | Direitos e autorizações dos respectivos titulares; nenhuma licença aberta adicional foi atribuída por esta alteração. |
+| Código recebido do orientador ou de outras fontes | Preservar os créditos e termos existentes; esta declaração cobre os direitos que o titular pode conceder. |
+
+Fontes: [Ultralytics](https://www.ultralytics.com/license), [Depth Pro](https://github.com/apple-aiml-research/ml-depth-pro/blob/main/LICENSE), [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html).
+
+## Publicação dos suplementos
+
+O repositório é público. O autor autorizou expressamente a divulgação dos links do Drive; veja [SUPLEMENTOS_DRIVE.md](SUPLEMENTOS_DRIVE.md). Isso não substitui licenças de terceiros. Os links e hashes estão em data/external_assets.json e models/registry.json. Verificações de integridade pendentes continuam documentadas.
+
+O PDF final do TCC e seus dados bibliográficos precisam ser confirmados antes da publicação da versão definitiva. Complete CITATION.cff com a autoria e referência aprovadas.

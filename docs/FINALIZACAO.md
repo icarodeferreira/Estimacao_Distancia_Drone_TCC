@@ -18,7 +18,7 @@ Os links já publicados estão em [SUPLEMENTOS_DRIVE.md](SUPLEMENTOS_DRIVE.md).
 | Imagens próprias | Pastas images e labels vinculadas; conferir o manifesto e a recuperação das 274 antes apontadas como ausentes. Não afirmar reprodução integral do treinamento enquanto o conjunto não estiver completo. |
 | Vídeos anotados finais | Disponibilizar links dos dois vídeos e identificar execução/configuração de origem. |
 | TCC aprovado | Informar título definitivo, nome completo, instituição e ano; fornecer PDF e autorização de publicação, se desejada. |
-| Licença do código | O titular deve escolher os termos; a licença do código não abrange automaticamente dados e pesos. |
+| Licença do código | Concluído: AGPL-3.0 para código próprio; dados, pesos e componentes externos mantêm seus termos. |
 | Depth Pro histórico | Recuperar commit e hash do checkpoint, se possível; manter a limitação explícita se não forem recuperados. |
 
 Não é necessário publicar coordenadas pessoais ou telemetria bruta para repetir a análise já arquivada. Use a versão reduzida disponibilizada e documente qualquer alteração adicional.

@@ -63,3 +63,7 @@ A referência nominal, a validação interna da regressão e a localização do 
 ## Materiais suplementares disponíveis
 
 [Baixar os materiais no Google Drive](https://drive.google.com/drive/folders/1Rk8uiL-aYO58WyFALP71eKlLxL9mtjuJ).
+
+## Licença
+
+O código próprio está sob a **GNU AGPL-3.0** (SPDX: `AGPL-3.0-only`). Consulte o [texto integral](LICENSE) e o [escopo da licença](LICENSE.md). Dependências, pesos, datasets, vídeos, imagens, telemetria e o texto do TCC mantêm os termos de seus titulares e não são automaticamente relicenciados. Preserve os créditos e avisos das fontes originais.
