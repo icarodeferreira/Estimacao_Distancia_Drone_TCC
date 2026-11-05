@@ -62,4 +62,4 @@ A referência nominal, a validação interna da regressão e a localização do 
 
 ## Materiais suplementares disponíveis
 
-[Baixar os materiais no Google Drive](https://drive.google.com/drive/folders/1Rk8uiL-aYO58WyFALP71eKlLxL9mtjuJ). Consulte [SUPLEMENTOS_DRIVE.md](docs/SUPLEMENTOS_DRIVE.md) para links individuais e instalação dos pesos, vídeos, telemetrias e dataset. O best.pt teve SHA-256 confirmado. A integridade dos demais arquivos, a completude do dataset e a inferência integral no Colab continuam pendentes.
+[Baixar os materiais no Google Drive](https://drive.google.com/drive/folders/1Rk8uiL-aYO58WyFALP71eKlLxL9mtjuJ).
