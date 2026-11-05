@@ -1,6 +1,6 @@
 # Licenças e publicação
 
-Este pacote é uma compilação privada para o autor. Não foi enviado a um repositório público. Antes da publicação, registre autorizações de vídeos, imagens, telemetria, pesos e texto. Exclua ou anonimize coordenadas e identificadores pessoais quando necessário. Use links externos para arquivos grandes somente quando o destino tiver autorização de distribuição.
+O repositório de código e resultados numéricos está público. Os suplementos de origem não estão automaticamente disponíveis ou autorizados para redistribuição. Antes de adicionar materiais, registre autorizações de vídeos, imagens, telemetria, pesos e texto. Exclua ou anonimize coordenadas e identificadores pessoais quando necessário. Use links externos para arquivos grandes somente quando o destino tiver autorização de distribuição.
 
 A licença própria do código está pendente de escolha pelo titular. `LICENSE.md` não concede direitos sobre materiais de terceiros. Preserve avisos das fontes originais. Consulte os termos oficiais de Ultralytics, Depth Pro e de cada conjunto de dados; não aplique uma licença única a todo o pacote sem verificar a compatibilidade.
 

@@ -6,16 +6,16 @@ Código e evidências numéricas do TCC que compara o Depth Pro e regressões ba
 
 | Objetivo | Notebook |
 |---|---|
-| Reproduzir resultados do Farol, sem redes nem vídeo | [Abrir notebook 01](https://colab.research.google.com/github/icarodeferreira/Estimacao_Distancia_Drone_TCC/blob/preparacao-tcc-2026-10-17/notebooks/01_Reproduzir_Farol_Colab.ipynb) |
-| Preparar um novo experimento | [Abrir notebook 02](https://colab.research.google.com/github/icarodeferreira/Estimacao_Distancia_Drone_TCC/blob/preparacao-tcc-2026-10-17/notebooks/02_Novos_Experimentos_Colab.ipynb) |
-| Refazer as inferências do Farol | [Abrir notebook 03](https://colab.research.google.com/github/icarodeferreira/Estimacao_Distancia_Drone_TCC/blob/preparacao-tcc-2026-10-17/notebooks/03_Farol_inferencia_Colab.ipynb) |
+| Reproduzir resultados do Farol, sem redes nem vídeo | [Abrir notebook 01](https://colab.research.google.com/github/icarodeferreira/Estimacao_Distancia_Drone_TCC/blob/Estimacao-de-distancia-de-drones/notebooks/01_Reproduzir_Farol_Colab.ipynb) |
+| Preparar um novo experimento | [Abrir notebook 02](https://colab.research.google.com/github/icarodeferreira/Estimacao_Distancia_Drone_TCC/blob/Estimacao-de-distancia-de-drones/notebooks/02_Novos_Experimentos_Colab.ipynb) |
+| Refazer as inferências do Farol | [Abrir notebook 03](https://colab.research.google.com/github/icarodeferreira/Estimacao_Distancia_Drone_TCC/blob/Estimacao-de-distancia-de-drones/notebooks/03_Farol_inferencia_Colab.ipynb) |
 
 Os notebooks obtêm esta branch no ambiente temporário do Colab. Para as redes, selecione GPU, obtenha os pesos e vídeos descritos abaixo e comece pelo piloto. Copie as saídas para o Drive antes de encerrar a sessão.
 
 ## Reprodução local
 
 ```bash
-git clone --branch preparacao-tcc-2026-10-17 https://github.com/icarodeferreira/Estimacao_Distancia_Drone_TCC.git
+git clone --branch Estimacao-de-distancia-de-drones https://github.com/icarodeferreira/Estimacao_Distancia_Drone_TCC.git
 cd Estimacao_Distancia_Drone_TCC
 python -m pip install -r requirements-analysis.lock.txt
 python scripts/reproduzir_farol.py
@@ -59,3 +59,7 @@ Segundo voo: 5.142 quadros; suporte telemétrico para 5.015 quadros no cenário 
 [Farol](docs/GUIA_FAROL.md) · [Novos experimentos](docs/GUIA_NOVOS_EXPERIMENTOS.md) · [Limitações](docs/LIMITACOES.md) · [Dados e revisão](docs/DADOS_E_REVISAO.md) · [Modelos e fontes](docs/MODELOS_E_FONTES.md) · [Validação atual](docs/VALIDACAO_GITHUB.md) · [Materiais](docs/STATUS_GITHUB.md) · [Licenças](docs/LICENCAS_E_PUBLICACAO.md) · [Rastreabilidade](provenance/PREPARACAO_GITHUB.md)
 
 A referência nominal, a validação interna da regressão e a localização do alvo são avaliações distintas. O segundo voo demonstra integração computacional e falhas, sem comprovar exatidão física generalizável nem prontidão operacional.
+
+## Finalização e validação
+
+Consulte [o roteiro de finalização](docs/FINALIZACAO.md) para os arquivos externos, teste completo no Colab e critérios de aceite. A análise numérica usa SciPy para a correlação de Spearman; essa dependência está declarada nos dois arquivos de requisitos de análise. Resultados e ambiente de cada execução de CI são guardados no artefato `reproducao-cpu`.

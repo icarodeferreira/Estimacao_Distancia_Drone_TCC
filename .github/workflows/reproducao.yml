@@ -2,6 +2,7 @@ name: Reprodução científica em CPU
 on:
   push:
   pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
@@ -19,3 +20,15 @@ jobs:
       - run: python scripts/reproduzir_farol.py
       - run: python scripts/integrar_sincronismo_novo_voo.py --dados-dir results/archived/dossie/03_FONTES_CODIGO_INTEGRACAO/FONTES --saida outputs/integracao_reproduzida
       - run: python scripts/gerar_figuras_tabelas.py
+      - name: Guardar resultados e ambiente
+        if: always()
+        run: |
+          mkdir -p outputs
+          python -m pip freeze > outputs/ambiente.txt
+          git rev-parse HEAD > outputs/commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reproducao-cpu
+          path: outputs/
+          retention-days: 30

@@ -18,5 +18,25 @@
     "url": "https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt",
     "sha256": null,
     "status": "obter na fonte e registrar hash; histórico desconhecido"
+  },
+  {
+    "asset": "yolo_detector",
+    "filename": "best.pt",
+    "url": null,
+    "sha256": "2ca8f89b9d946a6a06a12177db471cb7419b69b4a25ce619cc608c55267a61d8",
+    "status": "peso identificado; URL e autorização de redistribuição pendentes"
+  },
+  {
+    "asset": "own_images",
+    "filename": "TCC_Drone_Imagens_Disponiveis.zip",
+    "url": null,
+    "sha256": null,
+    "status": "202 imagens recuperadas segundo inventário; suplemento não publicado"
+  },
+  {
+    "asset": "annotated_videos",
+    "url": null,
+    "sha256": null,
+    "status": "links dos vídeos finais e identificação da execução pendentes"
   }
 ]

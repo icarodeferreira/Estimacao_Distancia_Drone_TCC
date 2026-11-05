@@ -7,3 +7,5 @@ Os três pacotes originais continuam sendo a compilação privada de origem; nã
 Ficam externos: best.pt (hash registrado), pesos Depth Pro, vídeo Farol, 202 imagens, telemetria bruta e capítulos do TCC. Ainda faltam 274 imagens, o vídeo do segundo voo e a identificação binária do checkpoint histórico Depth Pro. As URLs públicas dos suplementos e a licença própria estão pendentes.
 
 Os relatórios de validação de 12/10 são históricos; a validação atual é docs/VALIDACAO_GITHUB.md. A inferência completa em GPU/Colab permanece não testada.
+
+Em 05/11/2026, os links e comandos foram ajustados à branch principal e a dependência SciPy foi incluída após diagnóstico dos logs de CI. Consulte `FINALIZACAO.md` para as ações restantes e a execução de Actions do commit correspondente para o estado no servidor.

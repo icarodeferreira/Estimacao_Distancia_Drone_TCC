@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-message: "Complete a autoria, o título definitivo e a URL antes de publicar ou citar."
+message: "Cite este repositório para o código. A referência definitiva do TCC depende da confirmação da autoria completa e do título aprovado."
 title: "Pacote de reprodução do estudo de estimação monocular de distância de drones"
 type: software
-version: 1.0.0
-date-released: 2026-10-12
+url: "https://github.com/icarodeferreira/Estimacao_Distancia_Drone_TCC"
+repository-code: "https://github.com/icarodeferreira/Estimacao_Distancia_Drone_TCC"
 authors:
-  - name: "Autor do TCC — identificação bibliográfica a completar"
+  - name: "icarodeferreira"
+    website: "https://github.com/icarodeferreira"
