@@ -6,14 +6,16 @@ Use Python 3.12 e instale `requirements-analysis.lock.txt`. Instale FFmpeg (incl
 
 Aceite do Farol: 904 predições comparadas, diferença máxima inferior a 1e-8 m. Os resultados esperados são MAE 1,57443 m (113 segundos) e MAE 1,42415 m com controle de qualidade (109 segundos). Isso verifica o processamento das inferências arquivadas, não uma nova inferência das redes.
 
-## Materiais que o autor precisa disponibilizar
+## Materiais e verificações restantes
+
+Os links já publicados estão em [SUPLEMENTOS_DRIVE.md](SUPLEMENTOS_DRIVE.md).
 
 | Material | Ação necessária |
 |---|---|
-| `best.pt` | Hospedar o peso autorizado e informar URL; conferir SHA-256 em `models/registry.json`. |
-| `farol.mov` | Hospedar o vídeo autorizado; preencher URL em `data/external_assets.json`. |
-| `IMG_5962_editado.mov` | Recuperar o arquivo original, conferir hash e fornecer URL. |
-| Imagens próprias | Disponibilizar as 202 recuperadas com licença/permissão; conferir o manifesto e as 274 apontadas como ausentes. Não afirmar reprodução integral do treinamento enquanto o conjunto não estiver completo. |
+| `best.pt` | Link publicado e SHA-256 confirmado em `models/registry.json`. |
+| `farol.mov` | Link publicado; conferir se video_final_farol.mov coincide com o hash da entrada histórica. |
+| `IMG_5962_editado.mov` | Link publicado; conferir hash do arquivo compartilhado. |
+| Imagens próprias | Pastas images e labels vinculadas; conferir o manifesto e a recuperação das 274 antes apontadas como ausentes. Não afirmar reprodução integral do treinamento enquanto o conjunto não estiver completo. |
 | Vídeos anotados finais | Disponibilizar links dos dois vídeos e identificar execução/configuração de origem. |
 | TCC aprovado | Informar título definitivo, nome completo, instituição e ano; fornecer PDF e autorização de publicação, se desejada. |
 | Licença do código | O titular deve escolher os termos; a licença do código não abrange automaticamente dados e pesos. |
@@ -28,7 +30,7 @@ Não é necessário publicar coordenadas pessoais ou telemetria bruta para repet
 3. Execute primeiro o piloto, verificando caixas, classe drone (índice 2), focal, sincronização e saídas de distância. Depois execute o processamento completo.
 4. Salve notebook executado, configuração, commit do repositório, versões instaladas, identificação da GPU, hash dos pesos, tempo de execução e mensagens de erro, se houver.
 5. Confira o vídeo anotado e as tabelas. Compare as métricas com as arquivadas, explicando diferenças de ambiente/checkpoint; não substitua resultados históricos silenciosamente.
-6. Execute o notebook 02 com o segundo voo quando seu vídeo estiver disponível. Disponibilidade temporal não comprova acurácia métrica em voo independente.
+6. Execute o notebook 02 com o segundo voo usando o vídeo disponibilizado, após conferir sua integridade. Disponibilidade temporal não comprova acurácia métrica em voo independente.
 7. Atualize `docs/VALIDACAO_GITHUB.md` com evidências e links. Só marque inferência completa como validada após o término dessas etapas.
 
 ## Versão final
