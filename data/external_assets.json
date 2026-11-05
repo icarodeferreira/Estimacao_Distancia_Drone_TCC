@@ -2,36 +2,41 @@
   {
     "asset": "farol_video",
     "filename": "farol.mov",
-    "url": null,
+    "url": "https://drive.google.com/file/d/14NcZVEYLTC39N6xAPMMdUQCW8I5xci6G/view",
     "sha256": "0cf939776f4a1410f3a6394f6b91b3daaf943ab40569991a7dd83865e157453b",
-    "status": "suplemento privado; autorização pública não registrada"
+    "status": "localizado no Drive; hash histórico ainda não confrontado com o arquivo compartilhado",
+    "source_filename": "video_final_farol.mov",
+    "sha256_verified": false
   },
   {
     "asset": "novo_voo_video",
     "filename": "IMG_5962_editado.mov",
-    "url": null,
+    "url": "https://drive.google.com/file/d/19iqaDQylxnRCsIGqUBQYIjekryvSu6jz/view",
     "sha256": "3bc510982efea93d18734d39d670e7661edc250f55e9e28e85ade35b67779221",
-    "status": "ausente; hash declarado em origem"
+    "status": "localizado no Drive; hash histórico ainda não confrontado",
+    "sha256_verified": false
   },
   {
     "asset": "depth_pro",
     "url": "https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt",
     "sha256": null,
-    "status": "obter na fonte e registrar hash; histórico desconhecido"
+    "status": "disponível no Drive; hash e equivalência histórica não verificados",
+    "supplement_url": "https://drive.google.com/file/d/16rMropPr7fG5I4SvjnWnz-TAFHEDgsZ8/view"
   },
   {
     "asset": "yolo_detector",
     "filename": "best.pt",
-    "url": null,
+    "url": "https://drive.google.com/file/d/1JLCl_LLR5cV4wROwWfqvDhIZNg90s_Pt/view",
     "sha256": "2ca8f89b9d946a6a06a12177db471cb7419b69b4a25ce619cc608c55267a61d8",
-    "status": "peso identificado; URL e autorização de redistribuição pendentes"
+    "status": "download e SHA-256 confirmados em 05/11/2026",
+    "sha256_verified": true
   },
   {
     "asset": "own_images",
-    "filename": "TCC_Drone_Imagens_Disponiveis.zip",
-    "url": null,
+    "filename": null,
+    "url": "https://drive.google.com/drive/folders/1xkUs16ZfIzqc_rNjZK22lfyly0ro1Bqs",
     "sha256": null,
-    "status": "202 imagens recuperadas segundo inventário; suplemento não publicado"
+    "status": "pastas images e labels disponíveis; completude ainda não auditada"
   },
   {
     "asset": "annotated_videos",
