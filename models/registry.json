@@ -3,13 +3,16 @@
     "path": "models/best.pt",
     "sha256": "2ca8f89b9d946a6a06a12177db471cb7419b69b4a25ce619cc608c55267a61d8",
     "version": "Ultralytics 8.4.124 (metadados do checkpoint)",
-    "license": "consultar termos Ultralytics e direitos do treinamento; autorização de redistribuição não registrada"
+    "license": "consultar termos Ultralytics e direitos do treinamento; autorização de redistribuição não registrada",
+    "url": "https://drive.google.com/file/d/1JLCl_LLR5cV4wROwWfqvDhIZNg90s_Pt/view",
+    "sha256_verified": true
   },
   "depth_pro": {
     "asset": "depth_pro",
     "url": "https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt",
     "sha256": null,
-    "status": "obter na fonte e registrar hash; histórico desconhecido"
+    "status": "obter na fonte e registrar hash; histórico desconhecido",
+    "supplement_url": "https://drive.google.com/file/d/16rMropPr7fG5I4SvjnWnz-TAFHEDgsZ8/view"
   },
   "calibration": {
     "origin": "Farol; XR conforme protocolo original",
