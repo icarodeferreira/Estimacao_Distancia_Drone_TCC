@@ -59,3 +59,7 @@ Segundo voo: 5.142 quadros; suporte telemétrico para 5.015 quadros no cenário 
 [Farol](docs/GUIA_FAROL.md) · [Novos experimentos](docs/GUIA_NOVOS_EXPERIMENTOS.md) · [Limitações](docs/LIMITACOES.md) · [Dados e revisão](docs/DADOS_E_REVISAO.md) · [Modelos e fontes](docs/MODELOS_E_FONTES.md) · [Validação atual](docs/VALIDACAO_GITHUB.md) · [Materiais](docs/STATUS_GITHUB.md) · [Licenças](docs/LICENCAS_E_PUBLICACAO.md) · [Rastreabilidade](provenance/PREPARACAO_GITHUB.md)
 
 A referência nominal, a validação interna da regressão e a localização do alvo são avaliações distintas. O segundo voo demonstra integração computacional e falhas, sem comprovar exatidão física generalizável nem prontidão operacional.
+
+## Materiais suplementares disponíveis
+
+[Baixar os materiais no Google Drive](https://drive.google.com/drive/folders/1Rk8uiL-aYO58WyFALP71eKlLxL9mtjuJ). Consulte [SUPLEMENTOS_DRIVE.md](docs/SUPLEMENTOS_DRIVE.md) para links individuais e instalação dos pesos, vídeos, telemetrias e dataset. O best.pt teve SHA-256 confirmado. A integridade dos demais arquivos, a completude do dataset e a inferência integral no Colab continuam pendentes.
